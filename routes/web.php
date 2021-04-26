@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+//use App\Http\Controllers\HomeController;
+//use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/blogs', function () {
     return "Blogs";
@@ -32,3 +35,5 @@ Route::get('/detail/{id}', function ($id) {
 Route::get('/profile', function () {
     return 'Profile';
 });
+
+Route::resource('post', PostController::class);
