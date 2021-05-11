@@ -44,6 +44,7 @@
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <p class="text-light fs-1">It's a blog make by Laravel Framework</p>
                 </div>
+                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
             </div>
         </div>
     </body>

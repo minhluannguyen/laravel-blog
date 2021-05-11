@@ -13,7 +13,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{$post['title']}}</h5>
                       <p class="card-text">{{$post['description']}}</p>
-                      <a href="/post/{{$post['id']}}" class="btn btn-primary">Detail</a>
+                      <a href="/posts/{{$post['id']}}" class="btn btn-primary">Detail</a>
                     </div>
                     @php
                     
